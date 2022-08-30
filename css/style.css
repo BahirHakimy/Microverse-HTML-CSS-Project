@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     display: flex;
@@ -15,3 +16,38 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+h1 {
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 4em;
+}
+p{
+    font-size:2em;
+    padding: 1em;
+}
+
+label{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+input{
+    padding: 10px;
+    font-size: 20px;
+
+}
+#number{
+    width: 300px;
+}
+
+#submit{
+    background-color: darkgray;
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
