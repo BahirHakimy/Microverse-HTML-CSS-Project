@@ -7,15 +7,71 @@
   </head>
 
   <body>
-    <h1 id ='title'>Survey Form</h1>
-    <p id = 'description'>This page is destinated to receive input data from yourself to be stored in a remote database</p>
-    <form id = 'survey-form'>
-    <input type = 'text' id = 'name'/>
-    <input type = 'email' id = 'email'/>
-    <input id = "number" type ="number"/>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      This page is destinated to receive input data from yourself to be stored
+      in a remote database
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label"
+        >Name
+        <input type="text" required id="name" placeholder="Enter your name" />
+      </label>
+      <label for="email" id="email-label"
+        >Email
+
+        <input
+          type="email"
+          required
+          id="email"
+          placeholder="Enter your email address"
+        />
+      </label>
+      <label for="number" id="number-label"
+        >Enter a number
+
+        <input
+          id="number"
+          min="0"
+          max="100"
+          type="number"
+          placeholder="Enter a number between 0 to 100"
+        />
+      </label>
+      <label for="dropdown"
+        >Gender
+        <select name="gender" id="dropdown">
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+      </label>
+      <label for="radio1"
+        >First
+        <input type="radio" name="radio" id="radio1" value="first" />
+      </label>
+      <label for="radio2"
+        >Second
+        <input type="radio" name="radio" id="radio2" value="second" />
+      </label>
+      <label for="chk1"
+        >Checkbox1
+        <input type="checkbox" name="chk1" id="chk1" value="Checkbox 1" />
+      </label>
+      <label for="chk2"
+        >Checkbox2
+        <input type="checkbox" name="chk2" id="chk2" value="Checkbox 2" />
+      </label>
+      <label for="chk3"
+        >Checkbox3
+        <input type="checkbox" name="chk3" id="chk3" value="Checkbox 3" />
+      </label>
+      <label for="textarea"
+        >Comments
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      </label>
+      <button type="submit" id="submit">Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
-    
   </body>
 </html>
