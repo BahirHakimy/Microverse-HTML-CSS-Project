@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -15,12 +21,17 @@
     <form id="survey-form">
       <label for="name" id="name-label"
         >Name
-        <input type="text" required id="name" placeholder="Enter your name" />
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter your name"
+        />
       </label>
       <label for="email" id="email-label"
         >Email
-
         <input
+          class="form-control"
           type="email"
           required
           id="email"
@@ -29,8 +40,8 @@
       </label>
       <label for="number" id="number-label"
         >Enter a number
-
         <input
+          class="form-control"
           id="number"
           min="0"
           max="100"
@@ -40,19 +51,21 @@
       </label>
       <label for="dropdown"
         >Gender
-        <select name="gender" id="dropdown">
+        <select class="form-control" name="gender" id="dropdown">
           <option value="M">Male</option>
           <option value="F">Female</option>
         </select>
       </label>
-      <label for="radio1"
-        >First
-        <input type="radio" name="radio" id="radio1" value="first" />
-      </label>
-      <label for="radio2"
-        >Second
-        <input type="radio" name="radio" id="radio2" value="second" />
-      </label>
+      <div class="d-flex">
+        <div class="form-group form-check">
+          <input type="radio" class="form-check-input" id="radio1" />
+          <label class="form-check-label" for="radio1">First</label>
+        </div>
+        <div class="form-group form-check">
+          <input type="radio" class="form-check-input" id="radio2" />
+          <label class="form-check-label" for="radio2">Second</label>
+        </div>
+      </div>
       <label for="chk1"
         >Checkbox1
         <input type="checkbox" name="chk1" id="chk1" value="Checkbox 1" />
@@ -67,9 +80,15 @@
       </label>
       <label for="textarea"
         >Comments
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <textarea
+          name="textarea"
+          class="form-control"
+          id="textarea"
+          cols="30"
+          rows="10"
+        ></textarea>
       </label>
-      <button type="submit" id="submit">Submit</button>
+      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>

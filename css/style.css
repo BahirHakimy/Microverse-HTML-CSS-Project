@@ -1,9 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 
-}
 body{
     display: flex;
     flex-direction: column;
@@ -29,25 +24,8 @@ p{
     padding: 1em;
 }
 
-label{
-    margin: 10px;
-    font-weight: bold;
-    font-size: 20px;
-}
-input{
-    padding: 10px;
-    font-size: 20px;
-
-}
 #number{
-    width: 300px;
+    width: 200px;
 }
 
-#submit{
-    background-color: darkgray;
-    color: white;
-    padding: 20px 30px;
-    font-size: 20px;
-    border-radius: 10px;
-}
 
