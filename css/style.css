@@ -1,31 +1,74 @@
 
 body{
+    font-family: sans-serif;
+    background-image: url(https://blog.axcethr.com/hubfs/how%20to%20conduct%20an%20employee%20engagement%20survey.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+#container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #192338c9;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+#captions{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#description{
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: .1rem .1rem .2rem #222;
+}
+#title{
+    color: white;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem .2rem #222;
 }
 #survey-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(20 29 55 / 68%);
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    width: 40%;
 }
-
-h1 {
+.group{
     width: 100%;
-    text-align: center;
-    background-color: blue;
+    padding: .5 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+.group label{
     color: white;
-    font-size: 4em;
+    font-weight: 1.2rem;
+    font-weight: 500;
 }
-p{
-    font-size:2em;
-    padding: 1em;
+.form-input{
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
 }
-
-#number{
-    width: 200px;
+#submit{
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: #152ea5;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    box-shadow: .1rem .1rem .1rem black;
 }
-
-

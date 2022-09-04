@@ -2,95 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
   </head>
 
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
-      This page is destinated to receive input data from yourself to be stored
-      in a remote database
-    </p>
-    <form id="survey-form">
-      <label for="name" id="name-label"
-        >Name
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Enter your name"
-        />
-      </label>
-      <label for="email" id="email-label"
-        >Email
-        <input
-          class="form-control"
-          type="email"
-          required
-          id="email"
-          placeholder="Enter your email address"
-        />
-      </label>
-      <label for="number" id="number-label"
-        >Enter a number
-        <input
-          class="form-control"
-          id="number"
-          min="0"
-          max="100"
-          type="number"
-          placeholder="Enter a number between 0 to 100"
-        />
-      </label>
-      <label for="dropdown"
-        >Gender
-        <select class="form-control" name="gender" id="dropdown">
-          <option value="M">Male</option>
-          <option value="F">Female</option>
-        </select>
-      </label>
-      <div class="d-flex">
-        <div class="form-group form-check">
-          <input type="radio" class="form-check-input" id="radio1" />
-          <label class="form-check-label" for="radio1">First</label>
-        </div>
-        <div class="form-group form-check">
-          <input type="radio" class="form-check-input" id="radio2" />
-          <label class="form-check-label" for="radio2">Second</label>
-        </div>
+    <div id="container">
+      <div id="captions">
+        <p id="description">Microverse Trial Survey Form</p>
+        <h1 id="title">Survey Form</h1>
       </div>
-      <label for="chk1"
-        >Checkbox1
-        <input type="checkbox" name="chk1" id="chk1" value="Checkbox 1" />
-      </label>
-      <label for="chk2"
-        >Checkbox2
-        <input type="checkbox" name="chk2" id="chk2" value="Checkbox 2" />
-      </label>
-      <label for="chk3"
-        >Checkbox3
-        <input type="checkbox" name="chk3" id="chk3" value="Checkbox 3" />
-      </label>
-      <label for="textarea"
-        >Comments
-        <textarea
-          name="textarea"
-          class="form-control"
-          id="textarea"
-          cols="30"
-          rows="10"
-        ></textarea>
-      </label>
-      <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-    </form>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="js/index.js"></script>
+      <form id="survey-form">
+        <div class="group">
+          <label for="name" id="name-label">Name </label>
+          <input
+            type="text"
+            class="form-input"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="group">
+          <label for="email" id="email-label">Email </label>
+          <input
+            class="form-input"
+            type="email"
+            required
+            id="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="group">
+          <label for="number" id="number-label">Enter a number </label>
+          <input
+            class="form-input"
+            id="number"
+            min="0"
+            max="100"
+            type="number"
+            placeholder="Enter a number between 0 to 100"
+          />
+        </div>
+        <div class="group">
+          <label for="dropdown">Gender </label>
+          <select class="form-input" name="gender" id="dropdown">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+        </div>
+        <div class="group">
+          <label>You can select one of the options given below.</label>
+          <div class="checkbox">
+            <input type="radio" name="select" id="radio1" />
+            <label for="radio1">First</label>
+          </div>
+          <div class="checkbox">
+            <input type="radio" name="select" id="radio2" />
+            <label for="radio2">Second</label>
+          </div>
+        </div>
+        <div class="group">
+          <label>Select some foods you like to eat</label>
+          <div class="chk-group">
+            <input type="checkbox" name="chk1" id="chk1" value="Checkbox 1" />
+            <label for="chk1">Pitza </label>
+          </div>
+          <div class="chk-group">
+            <input type="checkbox" name="chk2" id="chk2" value="Checkbox 2" />
+            <label for="chk2">Chicken </label>
+          </div>
+          <div class="chk-group">
+            <input type="checkbox" name="chk3" id="chk3" value="Checkbox 3" />
+            <label for="chk3">Beef </label>
+          </div>
+        </div>
+        <div class="group">
+          <label for="textarea">Comments </label>
+          <textarea
+            name="textarea"
+            class="form-input"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <script src="js/index.js"></script>
+    </div>
   </body>
 </html>
